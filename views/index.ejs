@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>CSV Upload and Download</title>
+</head>
+<body>
+  <h1>CSV Upload and Download</h1>
+  
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="csvFile">Upload CSV File:</label>
+    <input type="file" id="csvFile" name="csvFile" accept=".csv">
+    <button type="submit">Upload</button>
+  </form>
+
+  <hr>
+
+  <form action="/download" method="get">
+    <label for="startTime">Start Time:</label>
+    <input type="datetime-local" id="startTime" name="startTime">
+    
+    <label for="endTime">End Time:</label>
+    <input type="datetime-local" id="endTime" name="endTime">
+    
+    <button type="submit">Download Data</button>
+  </form>
+</body>
+</html>

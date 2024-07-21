@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  input[type="file"],
+  input[type="datetime-local"] {
+    margin: 10px 0;
+  }
+  
